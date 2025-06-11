@@ -8,6 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 
     <style>
+                .container {
+            display: flex;
+            flex-wrap: wrap; /* переноска блоков :)*/
+            justify-content: space-between;
+        }
+
+        .item {
+            flex: 1 1 300px; /* ширина */
+            margin: 10px;
+        }
+
+        body {
+            font-size: 16px;
+            background-color: rgb(231, 183, 138);
+        }
+
+        /* меньше 768px */
+        @media (max-width: 768px) {
+        body {
+            font-size: 14px;
+            background-color: rgb(231, 183, 138);
+        }
+        }
+
+        /*с маленькими экранами */
+        @media (max-width: 480px) {
+        body {
+            font-size: 12px;
+        }
+        }
+
         .img-fixed {
             width: 1800px;  /* или любая нужная ширина */
             height: 700px; /* и нужная высота */
