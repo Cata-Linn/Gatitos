@@ -8,14 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 
     <style>
+        img {
+            max-width: 100%;
+             height: auto;
+             display: block;
+        }
+
         .container {
             display: flex;
-            flex-wrap: wrap; /* переноска блоков :)*/
+            flex-wrap: wrap;
             justify-content: space-between;
         }
 
+        .image-container {
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 100%;
+            }
+        }
+
         .item {
-            flex: 1 1 300px; /* ширина */
+            flex: 1 1 300px;
             margin: 10px;
         }
 
@@ -24,24 +48,23 @@
             background-color: rgb(231, 183, 138);
         }
 
-        /* меньше 768px */
         @media (max-width: 768px) {
-        body {
-            font-size: 14px;
-            background-color: rgb(231, 183, 138);
-        }
+            body {
+                font-size: 14px;
+                background-color: rgb(231, 183, 138);
+            }
         }
 
-        /*с маленькими экранами */
+
         @media (max-width: 480px) {
-        body {
-            font-size: 12px;
-        }
+            body {
+                font-size: 12px;
+            }
         }
 
         .img-fixed {
-            width: 1800px;
-            height: 350px;
+            width: 100%;
+            height: 60vh;
             object-fit: cover;
         }
         body {
@@ -139,6 +162,7 @@
                 <li><strong>Impulsividad:</strong> imagina estar descansando tranquilamente en tu casa y que, de repente, y absolutamente sin ninguna razón, una bolita de pelo te muerda. No lo esperabas, ¿verdad? ¡Pero eso no es todo! Espera un poco y el naranja vendrá todo amable y cariñoso cinco minutos después.</li>
             </ul>
             <p>Los gatos naranjas son buenos, sinceros y lindos. Pero los gatos así necesitan un dueño que los entienda, que pueda seguir su ritmo y, a veces, incluso aguantar su carácter, porque los gatos así no siempre saben pararse y controlarse. Y a veces me identifico mucho con ellos :3</p>
+            
             <img src="Images/gatos-amigables.jpg" alt="naranjas"> 
         </div>
 

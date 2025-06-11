@@ -8,14 +8,38 @@
      <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 
     <style>
-                .container {
+         img {
+            max-width: 100%;
+             height: auto;
+             display: block;
+        }
+
+        .container {
             display: flex;
-            flex-wrap: wrap; /* переноска блоков :)*/
+            flex-wrap: wrap;
             justify-content: space-between;
         }
 
+        .image-container {
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 100%;
+            }
+        }
+
         .item {
-            flex: 1 1 300px; /* ширина */
+            flex: 1 1 300px;
             margin: 10px;
         }
 
@@ -24,7 +48,7 @@
             background-color: rgb(231, 183, 138);
         }
 
-        /* меньше 768px */
+
         @media (max-width: 768px) {
         body {
             font-size: 14px;
@@ -32,7 +56,7 @@
         }
         }
 
-        /*с маленькими экранами */
+
         @media (max-width: 480px) {
         body {
             font-size: 12px;
@@ -40,9 +64,9 @@
         }
 
         .img-fixed {
-            width: 1800px;  /* или любая нужная ширина */
-            height: 600px; /* и нужная высота */
-            object-fit: cover; /* обрезает изображение, чтобы оно заполнило область */
+            width: 100%;  
+            height: 60vh; 
+            object-fit: cover;
         }
         body {
             background-color: rgb(231, 183, 138);
